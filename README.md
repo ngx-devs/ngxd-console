@@ -27,4 +27,4 @@
 
 ## Download
 
-You can install the [Nxxd Console Visual Studio Code Plugin](https://marketplace.visualstudio.com/items?itemName=nrwl.ngxd-console) from the Visual Studio Marketplace.
+You can install the [Nxxd Console Visual Studio Code Plugin](https://marketplace.visualstudio.com/items?itemName=GleisondeAlmeida.ngxd-console) from the Visual Studio Marketplace.
