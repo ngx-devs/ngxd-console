@@ -1,8 +1,16 @@
 {
   "branches": ["main"],
   "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
+    [
+      "semantic-release-gitmoji",
+      {
+        "releaseRules": {
+          "major": [":boom:"],
+          "minor": [":sparkles:"],
+          "patch": [":bug:", ":package:"]
+        }
+      }
+    ],
     [
       "semantic-release-vsce",
       {
@@ -19,6 +27,7 @@
           }
         ]
       }
-    ]
+    ],
+    ["@semantic-release/git", { "assets": ["package.json", "CHANGELOG.md"] }]
   ]
 }
