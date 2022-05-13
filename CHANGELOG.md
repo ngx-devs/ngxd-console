@@ -1,5 +1,18 @@
 # Changelog
 
+<a name="1.0.2"></a>
+## 1.0.2 (2022-05-13)
+
+### Fixed
+
+- ✏️ docs: update changelog [skip ci] [[8ebb01e](https://github.com/ngx-devs/ngxd-console/commit/8ebb01e1146807931cf335dea1b0c9f4aa9a21e1)]
+- 🐛 fix(readme): organization name [[7fa2839](https://github.com/ngx-devs/ngxd-console/commit/7fa28396708cb259695ed9fe5d7eec273f39c983)]
+
+### Miscellaneous
+
+-  chore(release): 1.0.2 [skip ci] [[8ede080](https://github.com/ngx-devs/ngxd-console/commit/8ede0804b4f15646192a06d2ae38ca6169dd56b4)]
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2022-05-13)
 
