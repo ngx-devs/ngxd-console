@@ -43,6 +43,7 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "update-package-json": "node ./src/scripts/precompile.js",
+    "preupdate-package-json": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
