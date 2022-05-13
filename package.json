@@ -13,19 +13,31 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:ngxd-console.helloWorld"
+    "onLanguage:typescript"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "ngxd-console.helloWorld",
-        "title": "Hello World"
+        "command": "ngxd-console-test.generate-component",
+        "title": "Ngxd: Generate Component"
       }
-    ]
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "ngxd-console-test.generate-component",
+          "when": "explorerResourceIsFolder",
+          "group": "ngxd-console"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
+    "precompile": "npm run update-package-json",
+    "update-package-json": "node ./src/scripts/precompile.js",
+    "preupdate-package-json": "tsc ./src/scripts/precompile.ts",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
