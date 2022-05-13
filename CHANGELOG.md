@@ -1,14 +1,20 @@
 # Changelog
 
-<a name="next"></a>
-## next
+<a name="1.1.0"></a>
+## 1.1.0 (2022-05-13)
+
+### Added
+
+- ✨ feat: update @ngx-devs/cli if is outdated [[566b598](https://github.com/ngx-devs/ngxd-console/commit/566b598508e248902270296d722e30afba8d6790)]
 
 ### Fixed
 
+- ✏️ docs: update changelog [skip ci] [[a030593](https://github.com/ngx-devs/ngxd-console/commit/a0305935a77acca3295f00c3434d9bf202a12f18)]
 - ✏️ docs: update changelog [skip ci] [[c3d7077](https://github.com/ngx-devs/ngxd-console/commit/c3d70779bfc7c914059087bbb9620c5a2881ba4a)]
 
 ### Miscellaneous
 
+-  chore(release): 1.1.0 [skip ci] [[2e83e24](https://github.com/ngx-devs/ngxd-console/commit/2e83e24a4462cd825bac4aa10e9bafa03364b4fd)]
 - 🚧 chore(husky): add pre-push script [[5029f90](https://github.com/ngx-devs/ngxd-console/commit/5029f90c689d512b867969aa45ca3ec3ff32d4a0)]
 
 
