@@ -25,8 +25,6 @@
 
 <hr>
 
-![Ngxd Console Screenshot](./.github/sample.gif)
-
 ## Download
 
 You can install the [Nxxd Console Visual Studio Code Plugin](https://marketplace.visualstudio.com/items?itemName=nrwl.ngxd-console) from the Visual Studio Marketplace.
