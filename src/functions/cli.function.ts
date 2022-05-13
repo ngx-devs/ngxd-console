@@ -1,30 +1,41 @@
+import { PluginManager } from 'live-plugin-manager';
 import * as vscode from 'vscode';
 
+import { CLI_PACKAGE_NAME, eMessage, ePromptAnswer } from '../enums/message.enum';
 import { execShell } from './exec-shell.function';
 
-export const hasCliInstalled = async () => {
+export const getInstalledVersion = async () => {
   try {
-    await execShell("ngxd --version");
-    return true;
+    const result = await execShell("ngxd --version");
+    const matches = result.match(/(\d\.\d\.\d)/);
+    if (!matches) return "";
+    const version = matches[0];
+    return version;
   } catch (e) {
-    return false;
+    return "";
   }
 };
 
 export const installCliIfNotInstalled = async () => {
-  const hasNgxdCliInstalled = await hasCliInstalled();
-  if (hasNgxdCliInstalled) return;
+  const cliInstalledVersion = await getInstalledVersion();
+  if (!cliInstalledVersion) return installCLI(eMessage.SHOULD_INSTALL_CLI);
 
-  const response = await vscode.window.showInformationMessage(
-    "@ngx-devs/cli is not installed do you want to install?",
-    "Yes",
-    "No"
-  );
+  const manager = new PluginManager();
+  const ngxdCliLatestVersion = (await manager.queryPackageFromNpm(CLI_PACKAGE_NAME)).version;
 
-  if (response === "No") {
-    return vscode.window.showErrorMessage("@ngx-devs/cli is required to run this extension");
+  const isCLIVersionUpToDate = cliInstalledVersion === ngxdCliLatestVersion;
+  if (isCLIVersionUpToDate) return;
+
+  await installCLI(eMessage.CLI_OUTDATED);
+};
+
+async function installCLI(message: string) {
+  const response = await vscode.window.showInformationMessage(message, ePromptAnswer.YES, ePromptAnswer.NO);
+
+  if (response === ePromptAnswer.NO) {
+    return vscode.window.showErrorMessage(eMessage.CLI_REQUIRED);
   }
 
-  await execShell("npm install -g @ngx-devs/cli");
-  vscode.window.showInformationMessage("@ngx-devs/cli installed successfully");
-};
+  await execShell(`npm i -g ${CLI_PACKAGE_NAME}@latest`);
+  vscode.window.showInformationMessage(eMessage.CLI_INSTALLED);
+}

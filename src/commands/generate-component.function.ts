@@ -2,12 +2,9 @@ import * as vscode from 'vscode';
 
 import { eError } from '../enums/error.enum';
 import { ALL_COMPONENT_TYPES, ALL_RESOURCE_TYPES, eResourceType } from '../enums/type.enum';
-import { installCliIfNotInstalled } from '../functions/cli.function';
 import { execShell } from '../functions/exec-shell.function';
 
 export async function generateComponent(uri: vscode.Uri) {
-  await installCliIfNotInstalled();
-
   const path = uri.fsPath;
 
   const componentName = await vscode.window.showInputBox({
