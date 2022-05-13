@@ -1,5 +1,18 @@
 # Changelog
 
+<a name="1.0.1"></a>
+## 1.0.1 (2022-05-13)
+
+### Fixed
+
+- ✏️ docs: update changelog [skip ci] [[58ad75c](https://github.com/ngx-devs/ngxd-console/commit/58ad75c5cc597f818cf985ed9b5b66f7bbf035c1)]
+- 🐛 fix(readme): marketplace url [[c5c8538](https://github.com/ngx-devs/ngxd-console/commit/c5c85381d56c4cc052c11cf64ad38402bda4020c)]
+
+### Miscellaneous
+
+-  chore(release): 1.0.1 [skip ci] [[d9fc0bf](https://github.com/ngx-devs/ngxd-console/commit/d9fc0bfec433717b4be57e4b38b9306ac1953769)]
+
+
 <a name="1.0.0"></a>
 ## 1.0.0 (2022-05-13)
 
