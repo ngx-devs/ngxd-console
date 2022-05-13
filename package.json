@@ -44,6 +44,7 @@
     "@vscode/test-electron": "^2.1.3",
     "eslint": "^8.14.0",
     "glob": "^8.0.1",
+    "husky": "^8.0.1",
     "mocha": "^9.2.2",
     "semantic-release": "^19.0.2",
     "semantic-release-gitmoji": "^1.4.4",
