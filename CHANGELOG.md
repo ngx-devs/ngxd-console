@@ -1,5 +1,17 @@
 # Changelog
 
+<a name="next"></a>
+## next
+
+### Fixed
+
+- ✏️ docs: update changelog [skip ci] [[c3d7077](https://github.com/ngx-devs/ngxd-console/commit/c3d70779bfc7c914059087bbb9620c5a2881ba4a)]
+
+### Miscellaneous
+
+- 🚧 chore(husky): add pre-push script [[5029f90](https://github.com/ngx-devs/ngxd-console/commit/5029f90c689d512b867969aa45ca3ec3ff32d4a0)]
+
+
 <a name="1.0.2"></a>
 ## 1.0.2 (2022-05-13)
 
