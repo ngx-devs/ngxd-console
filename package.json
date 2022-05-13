@@ -43,9 +43,7 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
-    "precompile": "npm run update-package-json",
     "update-package-json": "node ./src/scripts/precompile.js",
-    "preupdate-package-json": "tsc ./src/scripts/precompile.ts",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
