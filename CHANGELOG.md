@@ -1,5 +1,17 @@
 # Changelog
 
+<a name="next"></a>
+## next
+
+### Changed
+
+- 🔧 ci: update git-auto-commit-action commit message [[a213ff8](https://github.com/ngx-devs/ngxd-console/commit/a213ff8ef8b292a96f5653862b98c8393bffbd61)]
+
+### Fixed
+
+- ✏️ docs: update changelog [skip ci] [[4aa9a74](https://github.com/ngx-devs/ngxd-console/commit/4aa9a743fdf3c1fd2b58639a2056b0565f1a5205)]
+
+
 <a name="1.1.0"></a>
 ## 1.1.0 (2022-05-13)
 
