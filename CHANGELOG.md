@@ -1,7 +1,11 @@
 # Changelog
 
-<a name="next"></a>
-## next
+<a name="1.2.0"></a>
+## 1.2.0 (2022-05-28)
+
+### Added
+
+- ✨ feat: build types and resources dynamically [[478688b](https://github.com/ngx-devs/ngxd-console/commit/478688ba9fb9c81eeb588e717ba61a9ba85f5cc5)]
 
 ### Changed
 
@@ -10,6 +14,11 @@
 ### Fixed
 
 - ✏️ docs: update changelog [skip ci] [[4aa9a74](https://github.com/ngx-devs/ngxd-console/commit/4aa9a743fdf3c1fd2b58639a2056b0565f1a5205)]
+
+### Miscellaneous
+
+-  chore(release): 1.2.0 [skip ci] [[9a366fd](https://github.com/ngx-devs/ngxd-console/commit/9a366fd600ada62e010c020cbd580f8f2c4d3e34)]
+- 📝 docs: update changelog [skip ci] [[cef87e9](https://github.com/ngx-devs/ngxd-console/commit/cef87e96adf5b88105bbebe903f8ad52c3ba9a3a)]
 
 
 <a name="1.1.0"></a>
