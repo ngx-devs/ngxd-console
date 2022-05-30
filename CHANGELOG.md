@@ -5,7 +5,12 @@
 
 ### 📝 Documentation
 
+- 📝 docs: fix ci action report link [[228f2ab](https://github.com/ngx-devs/ngxd-console/commit/228f2ab7ad73682b1a67129f04da4e2f1e989f73)]
 - 📝 docs: update changelog [skip ci] [[c4d9fd9](https://github.com/ngx-devs/ngxd-console/commit/c4d9fd926d9f05e09dab7f8d209db9b973e0d7a7)]
+
+### Miscellaneous
+
+- 🚧 chore(changelog): update grouping rules [[fa66d0c](https://github.com/ngx-devs/ngxd-console/commit/fa66d0ca2f72fa6a10a7686ca8cd1d6dfdc05e9a)]
 
 
 <a name="1.2.0"></a>
