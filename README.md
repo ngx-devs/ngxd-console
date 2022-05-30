@@ -15,7 +15,7 @@
 
 **Spend less time looking up command line arguments and more time shipping incredible products.**
 
-[![CD:- Release Extension](https://github.com/ngx-devs/ngxd-console-test/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/ngx-devs/ngxd-console-test/actions/workflows/publish.yml)
+[![CD:- Release Extension](https://github.com/ngx-devs/ngxd-console/actions/workflows/publish.yml/badge.svg)](https://github.com/ngx-devs/ngxd-console/actions/workflows/publish.yml)
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/GleisondeAlmeida.ngxd-console?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=GleisondeAlmeida.ngxd-console)
 [![GitHub](https://img.shields.io/github/license/nrwl/nx-console?style=flat-square)](https://github.com/nrwl/nx-console/blob/master/LICENSE)
 ![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/GleisondeAlmeida.ngxd-console?style=flat-square)
