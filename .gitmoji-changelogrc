@@ -1,0 +1,64 @@
+{
+  "commitMapping": [
+    {
+      "group": "added",
+      "label": "✨ Features",
+      "emojis": [
+        "sparkles"
+      ]
+    },
+    {
+      "group": "fixed",
+      "label": "🐛 Bug Fixes",
+      "emojis": [
+        "bug"
+      ]
+    },
+    {
+      "group": "changed",
+      "label": "🚧 Changes",
+      "emojis": [
+        "art",
+        "zap",
+        "rotating_light",
+        "arrow_down",
+        "arrow_up",
+        "pushpin",
+        "recycle",
+        "wrench",
+        "rewind",
+        "alien",
+        "truck",
+        "bento",
+        "wheelchair",
+        "speech_balloon",
+        "card_file_box",
+        "children_crossing",
+        "building_construction",
+        "iphone"
+      ]
+    },
+    {
+      "group": "documentation",
+      "label": "📝 Documentation",
+      "emojis": [
+        "pencil",
+        "memo"
+      ]
+    },
+    {
+      "group": "internationalization",
+      "label": "🌐 Internationalization/localization",
+      "emojis": [
+        "globe_with_meridians"
+      ]
+    },
+    {
+      "group": "misc",
+      "label": "Miscellaneous",
+      "emojis": [
+        "lipstick"
+      ]
+    }
+  ]
+}
