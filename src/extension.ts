@@ -1,6 +1,8 @@
 import * as vscode from 'vscode';
 
 import { generateComponent } from './commands/generate-component.function';
+import { generateEntity } from './commands/generate-entity.function';
+import { generateService } from './commands/generate-service.function';
 import { eCommandKey } from './enums/command.enum';
 import { eMessage } from './enums/message.enum';
 import { installCliIfNotInstalled } from './functions/cli.function';
@@ -9,12 +11,23 @@ export async function activate(context: vscode.ExtensionContext) {
   await installCliIfNotInstalled();
   console.info(eMessage.EXTENSION_ACTIVATED);
 
-  const generateComponentDisposable = vscode.commands.registerCommand(
-    eCommandKey.GENERATE_COMPONENT,
-    generateComponent
-  );
+  const commands = [
+    {
+      command: eCommandKey.GENERATE_COMPONENT,
+      callback: generateComponent,
+    },
+    {
+      command: eCommandKey.GENERATE_SERVICE,
+      callback: generateService,
+    },
+    {
+      command: eCommandKey.GENERATE_ENTITY,
+      callback: generateEntity,
+    },
+  ];
 
-  context.subscriptions.push(generateComponentDisposable);
+  const disposables = commands.map(({ command, callback }) => vscode.commands.registerCommand(command, callback));
+  context.subscriptions.push(...disposables);
 }
 
 export function deactivate() {

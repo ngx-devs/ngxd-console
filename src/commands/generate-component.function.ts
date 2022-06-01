@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 import { eError } from '../enums/error.enum';
-import { ALL_COMPONENT_TYPES, ALL_RESOURCE_TYPES, eResourceType } from '../enums/type.enum';
+import { ALL_COMPONENT_TYPES } from '../enums/type.enum';
 import { execShell } from '../functions/exec-shell.function';
 
 export async function generateComponent(uri: vscode.Uri) {
@@ -15,15 +15,15 @@ export async function generateComponent(uri: vscode.Uri) {
     return vscode.window.showErrorMessage(eError.NAME_REQUIRED);
   }
 
-  const resourceType = await vscode.window.showQuickPick(ALL_RESOURCE_TYPES);
-  if (!resourceType) {
-    return vscode.window.showErrorMessage(eError.RESOURCE_TYPE_REQUIRED);
+  const componentType = await vscode.window.showQuickPick(ALL_COMPONENT_TYPES);
+
+  if (!componentType) {
+    return vscode.window.showErrorMessage(eError.COMPONENT_TYPE_REQUIRED);
   }
 
-  if (resourceType !== eResourceType.COMPONENT) return;
-
-  const componentType = await vscode.window.showQuickPick(ALL_COMPONENT_TYPES);
-  await execShell(`ngxd g c ${componentType} ${componentName} --path ${path}`);
+  const command = `ngxd g c ${componentType} ${componentName} --path ${path}`;
+  console.log({ command });
+  await execShell(command);
 
   vscode.window.showInformationMessage(`Component ${componentName} created in ${path}`);
 }

@@ -1,4 +1,4 @@
-export enum eResourceType {
+export enum eEntityType {
   COMPONENT = "component",
   DIRECTIVE = "directive",
   SERVICE = "service",
@@ -12,5 +12,19 @@ export enum eComponentType {
   WIDGET = "widget",
 }
 
-export const ALL_RESOURCE_TYPES = Object.values(eResourceType);
+export enum eServiceType {
+  COMMON = "common",
+  API = "api",
+}
+
+export const ALL_ENTITY_TYPES_VALUES = Object.values(eEntityType);
+
 export const ALL_COMPONENT_TYPES = Object.values(eComponentType);
+export const ALL_SERVICE_TYPES = Object.values(eServiceType);
+
+export const ALL_ENTITY_TYPES = {
+  [eEntityType.COMPONENT]: ALL_COMPONENT_TYPES,
+  [eEntityType.DIRECTIVE]: [],
+  [eEntityType.SERVICE]: ALL_SERVICE_TYPES,
+  [eEntityType.PIPE]: [],
+};

@@ -26,14 +26,32 @@
   "contributes": {
     "commands": [
       {
+        "command": "ngxd-console-test.generate-entity",
+        "title": "Ngxd: Generate Entity"
+      },
+      {
         "command": "ngxd-console-test.generate-component",
         "title": "Ngxd: Generate Component"
+      },
+      {
+        "command": "ngxd-console-test.generate-service",
+        "title": "Ngxd: Generate Service"
       }
     ],
     "menus": {
       "explorer/context": [
         {
+          "command": "ngxd-console-test.generate-entity",
+          "when": "explorerResourceIsFolder",
+          "group": "ngxd-console"
+        },
+        {
           "command": "ngxd-console-test.generate-component",
+          "when": "explorerResourceIsFolder",
+          "group": "ngxd-console"
+        },
+        {
+          "command": "ngxd-console-test.generate-service",
           "when": "explorerResourceIsFolder",
           "group": "ngxd-console"
         }
