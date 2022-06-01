@@ -1,7 +1,11 @@
 # Changelog
 
-<a name="next"></a>
-## next
+<a name="1.3.0"></a>
+## 1.3.0 (2022-06-01)
+
+### ✨ Features
+
+- ✨ feat: add entity and service commands [[6a5fa1c](https://github.com/ngx-devs/ngxd-console/commit/6a5fa1cbf2018d0e655182a2bf05f1fa2b2955a2)]
 
 ### 📝 Documentation
 
@@ -10,6 +14,9 @@
 
 ### Miscellaneous
 
+-  chore(release): 1.3.0 [skip ci] [[b098ad0](https://github.com/ngx-devs/ngxd-console/commit/b098ad0dbc312845bbf64a14476f1c0681208836)]
+- 🚧 chore(package.json): update script to update package.json [[a6b1ff9](https://github.com/ngx-devs/ngxd-console/commit/a6b1ff9bb504f7c8102a58c49a31e80e269cf07f)]
+-  :bow-and-arrow: chore: update changelog [skip ci] [[27998ef](https://github.com/ngx-devs/ngxd-console/commit/27998efcf82dbe6b42873659210387e0be1183f8)]
 - 🚧 chore(changelog): update grouping rules [[fa66d0c](https://github.com/ngx-devs/ngxd-console/commit/fa66d0ca2f72fa6a10a7686ca8cd1d6dfdc05e9a)]
 
 
