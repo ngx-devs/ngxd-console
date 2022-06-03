@@ -6,27 +6,36 @@ import { execShell } from './exec-shell.function';
 
 export const getInstalledVersion = async () => {
   try {
-    const result = await execShell("ngxd --version");
-    const matches = result.match(/(\d\.\d\.\d)/);
-    if (!matches) return "";
-    const version = matches[0];
-    return version;
+    const globalPackages = await execShell("npm list -g");
+    const cliVersion = globalPackages
+      .split("\n")
+      .find((line) => line.includes(CLI_PACKAGE_NAME))
+      ?.split("@ngx-devs/cli@")
+      .reverse()[0];
+
+    return cliVersion;
   } catch (e) {
-    return "";
+    console.error(e);
   }
 };
 
 export const installCliIfNotInstalled = async () => {
   const cliInstalledVersion = await getInstalledVersion();
+
   if (!cliInstalledVersion) return installCLI(eMessage.SHOULD_INSTALL_CLI);
 
   const manager = new PluginManager();
   const ngxdCliLatestVersion = (await manager.queryPackageFromNpm(CLI_PACKAGE_NAME)).version;
 
+  console.info(`ngxd CLI installed version: ${cliInstalledVersion}`);
+  console.info(`ngxd CLI latest version: ${ngxdCliLatestVersion}`);
+
   const isCLIVersionUpToDate = cliInstalledVersion === ngxdCliLatestVersion;
   if (isCLIVersionUpToDate) return;
 
-  await installCLI(eMessage.CLI_OUTDATED);
+  await installCLI(
+    `Your CLI version is out of date. Do you want to update version from ${cliInstalledVersion} to ${ngxdCliLatestVersion}?`
+  );
 };
 
 async function installCLI(message: string) {
