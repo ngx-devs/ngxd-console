@@ -1,5 +1,18 @@
 # Changelog
 
+<a name="1.3.1"></a>
+## 1.3.1 (2022-06-03)
+
+### 🐛 Bug Fixes
+
+- 🐛 fix: check of installed cli version [[ce89ca7](https://github.com/ngx-devs/ngxd-console/commit/ce89ca7f1449673a6fa28900561dd99d988bdac1)]
+
+### Miscellaneous
+
+-  chore(release): 1.3.1 [skip ci] [[590be69](https://github.com/ngx-devs/ngxd-console/commit/590be69615a0ab764563dcf8582239bede1b3bc2)]
+-  :bow-and-arrow: chore: update changelog [skip ci] [[2e6e324](https://github.com/ngx-devs/ngxd-console/commit/2e6e324b2dd7fad479f3fca86ae37e422b801f22)]
+
+
 <a name="1.3.0"></a>
 ## 1.3.0 (2022-06-01)
 
