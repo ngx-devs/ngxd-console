@@ -25,6 +25,19 @@
 
 <hr>
 
+## Requirements
+
+- [Node.js](https://git-scm.com/) >= 12 version
+- [Ngxd CLI](https://git-scm.com/) If you do not have this package, it will be asked to install it.
+
+<hr>
+
+## Release Notes
+
+[Changelog available here](https://github.com/ngx-devs/ngxd-console/blob/main/CHANGELOG.md).
+
+<hr>
+
 ## Download
 
 You can install the [Nxxd Console Visual Studio Code Plugin](https://marketplace.visualstudio.com/items?itemName=GleisondeAlmeida.ngxd-console) from the Visual Studio Marketplace.
