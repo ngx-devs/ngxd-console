@@ -1,5 +1,18 @@
 # Changelog
 
+<a name="1.3.2"></a>
+## 1.3.2 (2022-06-04)
+
+### 🐛 Bug Fixes
+
+- 🐛 fix: extension icon [[a0243cb](https://github.com/ngx-devs/ngxd-console/commit/a0243cb895e2aa03813d517cd8dde8b1aa7ba2b3)]
+
+### Miscellaneous
+
+-  chore(release): 1.3.2 [skip ci] [[4758a4c](https://github.com/ngx-devs/ngxd-console/commit/4758a4cdbd7dc2009b652a8b626fa15c34c43978)]
+-  :bow-and-arrow: chore: update changelog [skip ci] [[04cfad7](https://github.com/ngx-devs/ngxd-console/commit/04cfad72f25ace669520a1910deb75e25715464a)]
+
+
 <a name="1.3.1"></a>
 ## 1.3.1 (2022-06-03)
 
